@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jackm97/pyoptsparse/archive/conda-forge.tar.gz
-  sha256: 8ffbe36389f34a869aaf6864480e8801bdd80e640b8a1e3c0d1da8a295bb23a4
+  sha256: 7176a39b4eaa90c366173481625f296f0e41c6a67357d3a38065db30ecb9f182
 
 build:
   number: 0
