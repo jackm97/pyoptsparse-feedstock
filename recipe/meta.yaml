@@ -32,7 +32,7 @@ requirements:
     - python
     - numpy
     - ipopt >=1.13
-    - libpgmat                                # [win]
+    - libpgmath                               # [win]
 
   run:
     - python
