@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jackm97/pyoptsparse/archive/conda-forge.tar.gz
-  sha256: dba3289f5362654a8ef0ad6d05157bd303e1a942015319f8a20b6ffdc0f14544
+  sha256: 5b02eb2085c5d9234be37c5a904542ef53cc51f63ed308734844a83781623e92
 
 build:
   number: 0
@@ -21,10 +21,12 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
-    - python                                  # [build_platform != target_platform]
     - cross-python_{{ target_platform }}      # [build_platform != target_platform]
+    - python
     - numpy
     - meson >=0.60
+    - build
+    - pip
     - swig
     - pkg-config
 
