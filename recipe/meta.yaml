@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/jackm97/pyoptsparse/archive/conda-forge.tar.gz
-  sha256: 5b02eb2085c5d9234be37c5a904542ef53cc51f63ed308734844a83781623e92
+  url: https://github.com/jackm97/pyoptsparse/archive/meson-build.tar.gz
+  sha256: 777f7ddfbc6a51f895e5f174adb87785a507550af45b510248000fee305359a0
 
 build:
   number: 0
@@ -57,8 +57,7 @@ test:
     - setuptools
 
   commands:
-    - testflo --verbose .       # [not win]
-    - testflo -n 1 --verbose .  # [win]
+    - testflo -n 1 --verbose .
     - pip check
 
 about:
